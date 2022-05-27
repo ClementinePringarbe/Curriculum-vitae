@@ -1,11 +1,14 @@
 /* Style d'ensemble */
 body {
-    font-family: Avenir, sans-serif;
+    font-family: 'Tiro Telugu';
     padding: 0px;
     margin: 0px;
     text-align: justify;
     box-sizing: border-box;
-    background-color: darkslategrey;
+    background-color: #f0a6ca;
+    /* Fond Kim Petras - My Coconuts 
+    background: url("https://lastfm.freetls.fastly.net/i/u/ar0/a81b968458c21913eb4f66a73c29322d.jpg");
+    background-size: cover; */
 }
 
 /* Header & Footer */
@@ -14,16 +17,17 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     /* définit la largeur du bloc à 90% et la hauteur à 120 pixels */
-    width: 90%;
-    height: 120px;
+    width: 70%;
+    height: 200px;
     /* définit un padding de 20 pixels en haut et en bas */
     padding-top: 20px;
     padding-bottom: 20px;
     /* centre l'image de 20 pixels par rapport au bord */
     margin: 20px auto;
     border-radius: 10px;
-    background: url("https://imagizr.com/1200_628/cdn.sushi-maki.com/1/43/1383134049-sushi-volonte-orig.JPG");
-    background-size: cover;
+    box-shadow: 0px 0px 10px #ff99c8;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 header h1 {
     color: white;
@@ -47,11 +51,13 @@ section {
     display: flex; 
     flex-flow: row wrap;
     justify-content: center;
-    width: 90%;
+    width: 70%;
     padding-bottom: 20px;
     margin: 20px auto;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff99c8;
     background-color: #fff;
+    
 }
 section h2 {
     margin: 20px 0;
@@ -66,8 +72,8 @@ section > div {
     text-align: center;
 }
 .photo img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     /* border: 2px solid #000; */
     box-shadow: 0px 0px 10px;
     border-radius: 50%;
@@ -81,7 +87,8 @@ section > div {
 .social {
     display: flex;
     justify-content: space-around;
-    margin: 10px auto 0px auto;
+    padding: 10px auto 0px auto;
+    /* margin: 10px auto 0px auto; */
 }
 .social img {
     width: 40px;
@@ -93,20 +100,22 @@ section > div {
     display: flex;
     flex-flow: row wrap;
     border-bottom: 1px solid #bbb;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 .exp-info, .exp-desc {
     display: flex;
     flex-flow: column wrap;
-    flex: 0 0 90%;
+    flex: 0 0 95%;
     margin-left: auto;
 }
 .exp h3 {
-    font-size:  1.2em;
+    font-family: 'Amatic SC';
+    font-size:  2em;
 }
 .exp h4 {
-    font-size:  1em;
+    font-family: 'Amatic SC';
+    font-size:  1.5em;
     font-weight: normal;
 }
 
@@ -120,15 +129,17 @@ section > div {
     margin-bottom: 10px;
 }
 .competence {
-    flex: 0 0 40%;
+    flex: 0 0 15%;
 }
-/* Barre de progression de compétence */
+/* Barre de progression de compétences professionnelles et personnelles */
 .conteneur-barre {
-    flex: 0 0 60%;
+    flex: 0 0 40%;
+    justify-content: flex-end;
     border-radius: 5px;
     background-color: grey;
     border-bottom: 1px ridge grey;
 }
+/* La progression verte sur fond de barre grise */
 .barre {
     display: block;
     height: 100%;
@@ -152,17 +163,10 @@ section > div {
     background-color: #4B8;
     border-radius: 5px;
 }
-/* .competence-perso {
+.competence-perso {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-} */
-.conteneur-barre2 {
-    flex: 0 0 100%;
-    height: 0.5em;
-    margin-bottom: 0.25em;
-    border-radius: 5px;
-    background-color: grey;
+    /* justify-content: center; */
 }
 
 /* Section intérêts */
